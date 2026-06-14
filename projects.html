@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Haris P P</title>
-  <meta name="description" content="Selected projects by Haris P P — computer vision, video streaming, embedded systems, and cross-platform applications." />
+  <meta name="description" content="Selected projects by Haris P P — Qt/C++ desktop apps, screen recording, video streaming, computer vision, and embedded systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -27,19 +27,94 @@
       <p class="eyebrow">Selected Work</p>
       <h1>Projects</h1>
       <p class="lead">A selection of cross-platform systems I've designed and shipped —
-      spanning computer vision, real-time video, embedded hardware, and web.</p>
+      Qt/C++ desktop apps, screen recording, real-time video, computer vision, and embedded hardware.</p>
       <p class="note">📷 Replace the placeholder image in each card with a real screenshot (see <code>README</code> in the repo).</p>
     </section>
 
+    <!-- ============ RECENT PROJECTS ============ -->
+    <h2 class="group-heading">Recent Projects</h2>
     <section class="projects">
 
-      <!-- PROJECT 1 -->
+      <!-- RECENT 1 — Screen Recorder -->
       <article class="project">
         <div class="project-media">
-          <img src="assets/project-streaming.svg" alt="Video streaming platform" />
+          <img src="assets/project-screenrec.svg" alt="Replay Video Capture screen recording app" />
         </div>
         <div class="project-body">
-          <h2>WebRTC Streaming & Classroom Platform</h2>
+          <h2>Screen Recording Application <span class="badge">Windows &amp; macOS</span></h2>
+          <p class="project-problem"><strong>Problem:</strong> Users needed a reliable way to capture on-screen video and audio across both Windows and macOS from a single product.</p>
+          <p><strong>What I built:</strong> A cross-platform desktop screen &amp; video capture application — <em>Replay Video Capture</em> — handling high-quality recording on Windows and macOS.</p>
+          <p><strong>My role:</strong> Desktop developer — capture engine and cross-platform UI.</p>
+          <p class="project-link"><a href="https://applian.com/replay-video-capture/" target="_blank" rel="noopener">↗ applian.com/replay-video-capture</a></p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>Windows</span><span>macOS</span><span>Video Capture</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- RECENT 2 — Teleteens -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-teleteens.svg" alt="Teleteens parental control app" />
+        </div>
+        <div class="project-body">
+          <h2>Parental Control Application <span class="badge">Windows</span></h2>
+          <p class="project-problem"><strong>Problem:</strong> Parents needed a Windows tool to monitor and manage their children's device activity safely.</p>
+          <p><strong>What I built:</strong> A Windows parental-control application — <em>Teleteens</em> — for monitoring and managing device usage.</p>
+          <p><strong>My role:</strong> Desktop developer — monitoring logic and application UI.</p>
+          <p class="project-link"><a href="https://teleteens.co/" target="_blank" rel="noopener">↗ teleteens.co</a></p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>Windows</span><span>Parental Control</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- RECENT 3 — MixWorx -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-mixworx.svg" alt="MixWorx DJ and audio broadcasting software" />
+        </div>
+        <div class="project-body">
+          <h2>DJ &amp; Audio Broadcasting Software <span class="badge">Web</span></h2>
+          <p class="project-problem"><strong>Problem:</strong> DJs needed a platform to mix tracks and broadcast live audio to listeners online.</p>
+          <p><strong>What I built:</strong> A DJ mixing and live audio broadcasting platform — <em>MixWorx</em> — supporting real-time mixing and streaming.</p>
+          <p><strong>My role:</strong> Developer — audio handling and broadcasting features.</p>
+          <p class="project-link"><a href="https://djstream.music-worx.com/mixworx/" target="_blank" rel="noopener">↗ djstream.music-worx.com/mixworx</a></p>
+          <div class="tags">
+            <span>Audio Streaming</span><span>Web</span><span>Real-time</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ============ MORE PROJECTS ============ -->
+    <h2 class="group-heading">More Projects</h2>
+    <section class="projects">
+
+      <!-- Network Camera Recorder -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-camera.svg" alt="Network camera recorder" />
+        </div>
+        <div class="project-body">
+          <h2>Network Camera Recorder with Analytics</h2>
+          <p class="project-problem"><strong>Problem:</strong> Surveillance systems needed recording plus intelligent analytics and live viewing to reduce manual monitoring.</p>
+          <p><strong>What I built:</strong> A Qt-based recorder with HLS live view (including audio) on Web and desktop clients, plus object detection/recognition, motion detection, and email-alert systems.</p>
+          <p><strong>My role:</strong> Senior developer — server engine, analytics integration, and client apps.</p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>OpenCV</span><span>HLS</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- WebRTC Classroom -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-streaming.svg" alt="WebRTC streaming platform" />
+        </div>
+        <div class="project-body">
+          <h2>WebRTC Streaming &amp; Classroom Platform</h2>
           <p class="project-problem"><strong>Problem:</strong> Remote classrooms needed low-latency, real-time audio/video/text communication plus exams, assignments, and student management.</p>
           <p><strong>What I built:</strong> A WebRTC-based platform enabling live audio/video/text chat with full classroom workflows — assignments, exams, and student administration.</p>
           <p><strong>My role:</strong> Lead developer — architecture, signaling, and cross-platform clients.</p>
@@ -49,82 +124,66 @@
         </div>
       </article>
 
-      <!-- PROJECT 2 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/project-camera.svg" alt="Network camera recorder" />
-        </div>
-        <div class="project-body">
-          <h2>Network Camera Recorder with Analytics</h2>
-          <p class="project-problem"><strong>Problem:</strong> Surveillance systems needed recording plus intelligent analytics to reduce manual monitoring.</p>
-          <p><strong>What I built:</strong> A Qt-based recorder integrating object detection/recognition, motion detection, and email-alert systems — with cross-platform viewer clients for Windows, Web, iOS, and Android.</p>
-          <p><strong>My role:</strong> Senior developer — server engine, analytics integration, and client apps.</p>
-          <div class="tags">
-            <span>Qt / QML</span><span>OpenCV</span><span>C++</span><span>Computer Vision</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJECT 3 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/project-vision.svg" alt="Computer vision system" />
-        </div>
-        <div class="project-body">
-          <h2>Embedded Computer Vision (BeagleBoard / Raspberry Pi)</h2>
-          <p class="project-problem"><strong>Problem:</strong> Industrial use cases required on-device vision — fire/cloud detection during explosions and dimension measurement — on resource-constrained hardware.</p>
-          <p><strong>What I built:</strong> OpenCV-based vision applications running on BeagleBoard and Raspberry Pi, including cross-compiled Linux kernels and camera-recorder solutions with detection & alerts.</p>
-          <p><strong>My role:</strong> Design engineer — vision algorithms, embedded porting, and kernel cross-compilation.</p>
-          <div class="tags">
-            <span>OpenCV</span><span>Python / C++</span><span>Embedded Linux</span><span>Raspberry Pi</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJECT 4 -->
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/project-intercom.svg" alt="WebRTC intercom system" />
-        </div>
-        <div class="project-body">
-          <h2>Raspberry Pi WebRTC Intercom</h2>
-          <p class="project-problem"><strong>Problem:</strong> A door/intercom system needed live two-way audio/video accessible from mobile devices.</p>
-          <p><strong>What I built:</strong> A Raspberry Pi intercom with WebRTC streaming and native Android & iOS client apps for real-time communication.</p>
-          <p><strong>My role:</strong> Full ownership — hardware integration, signaling, and mobile clients.</p>
-          <div class="tags">
-            <span>WebRTC</span><span>Raspberry Pi</span><span>Android</span><span>iOS</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- PROJECT 5 -->
+      <!-- Access Control -->
       <article class="project">
         <div class="project-media">
           <img src="assets/project-web.svg" alt="Access control web application" />
         </div>
         <div class="project-body">
-          <h2>Access Control & Remote Door Web System</h2>
-          <p class="project-problem"><strong>Problem:</strong> Facilities needed centralized management of access control and remote door operations over the web.</p>
-          <p><strong>What I built:</strong> A web application for managing access-control systems and remote door operations, built on Apache, MySQL, and PHP on Ubuntu.</p>
-          <p><strong>My role:</strong> Backend & web developer.</p>
+          <h2>Access Control &amp; Remote Door System</h2>
+          <p class="project-problem"><strong>Problem:</strong> Facilities needed centralized management of access control and remote door operations across web and desktop.</p>
+          <p><strong>What I built:</strong> An application to control remote doors and manage access-control systems, delivered across Web and desktop clients.</p>
+          <p><strong>My role:</strong> Backend &amp; application developer.</p>
           <div class="tags">
-            <span>PHP</span><span>MySQL</span><span>Apache</span><span>Linux</span>
+            <span>Web</span><span>C++ / Qt</span><span>MySQL</span><span>Linux</span>
           </div>
         </div>
       </article>
 
-      <!-- PROJECT 6 -->
+      <!-- Beacon -->
       <article class="project">
         <div class="project-media">
-          <img src="assets/project-beacon.svg" alt="Beacon configuration app" />
+          <img src="assets/project-beacon.svg" alt="Beacon management app" />
         </div>
         <div class="project-body">
-          <h2>Beacon Configuration & Ad Management</h2>
-          <p class="project-problem"><strong>Problem:</strong> Beacon-based advertisement systems for smartphones needed an easy way to configure and manage devices.</p>
-          <p><strong>What I built:</strong> A Qt desktop application to configure beacons and manage beacon-driven advertisement delivery to smartphones.</p>
-          <p><strong>My role:</strong> Application developer — UI and device communication.</p>
+          <h2>Beacon Management App</h2>
+          <p class="project-problem"><strong>Problem:</strong> Beacon-based advertisement systems needed an easy way to configure devices over Bluetooth.</p>
+          <p><strong>What I built:</strong> A Qt desktop application using Bluetooth communication to configure beacons and manage beacon-driven advertisement delivery.</p>
+          <p><strong>My role:</strong> Application developer — UI and BLE device communication.</p>
           <div class="tags">
-            <span>Qt / QML</span><span>C++</span><span>BLE Beacons</span>
+            <span>C++ / Qt</span><span>Bluetooth / BLE</span><span>Desktop</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Trading App -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-trading.svg" alt="Trading application" />
+        </div>
+        <div class="project-body">
+          <h2>Trading Application</h2>
+          <p class="project-problem"><strong>Problem:</strong> Traders needed a responsive cross-platform desktop client for monitoring and executing trades.</p>
+          <p><strong>What I built:</strong> A cross-platform desktop trading client built with Qt/C++.</p>
+          <p><strong>My role:</strong> Desktop developer.</p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>Desktop</span><span>Real-time Data</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Embedded CV -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-vision.svg" alt="Embedded computer vision" />
+        </div>
+        <div class="project-body">
+          <h2>Embedded Computer Vision (BeagleBoard / Raspberry Pi)</h2>
+          <p class="project-problem"><strong>Problem:</strong> Industrial use cases required on-device vision — fire/cloud detection and dimension measurement — on resource-constrained hardware.</p>
+          <p><strong>What I built:</strong> OpenCV-based vision applications on BeagleBoard and Raspberry Pi, including cross-compiled Linux kernels and a WebRTC intercom with Android &amp; iOS clients.</p>
+          <p><strong>My role:</strong> Design engineer — vision algorithms, embedded porting, and kernel cross-compilation.</p>
+          <div class="tags">
+            <span>OpenCV</span><span>Python / C++</span><span>Embedded Linux</span><span>Raspberry Pi</span>
           </div>
         </div>
       </article>
