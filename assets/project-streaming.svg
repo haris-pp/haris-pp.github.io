@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.25"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#4f9cff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#4f9cff" stop-opacity="0.05"/>
     </linearGradient>
   </defs>
   <rect width="640" height="440" fill="#161b22"/>
   <rect width="640" height="440" fill="url(#g)"/>
-  <g stroke="#22d3ee" stroke-opacity="0.15" stroke-width="1">
+  <g stroke="#4f9cff" stroke-opacity="0.15" stroke-width="1">
     <path d="M0 110 H640 M0 220 H640 M0 330 H640 M160 0 V440 M320 0 V440 M480 0 V440"/>
   </g>
-  <text x="320" y="205" font-family="monospace" font-size="64" fill="#22d3ee" fill-opacity="0.85" text-anchor="middle">&#8857; &#8943; &#8857;</text>
-  <text x="320" y="270" font-family="sans-serif" font-size="26" font-weight="700" fill="#e6edf3" text-anchor="middle">Beacon Config</text>
+  <text x="320" y="205" font-family="monospace" font-size="64" fill="#4f9cff" fill-opacity="0.85" text-anchor="middle">&#9673; &#9654; &#9673;</text>
+  <text x="320" y="270" font-family="sans-serif" font-size="26" font-weight="700" fill="#e6edf3" text-anchor="middle">WebRTC Streaming</text>
   <text x="320" y="300" font-family="monospace" font-size="13" fill="#9aa6b2" text-anchor="middle">screenshot placeholder</text>
 </svg>
