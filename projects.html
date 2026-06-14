@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Haris P P</title>
+  <meta name="description" content="Selected projects by Haris P P — computer vision, video streaming, embedded systems, and cross-platform applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">Haris<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="Haris-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Selected Work</p>
+      <h1>Projects</h1>
+      <p class="lead">A selection of cross-platform systems I've designed and shipped —
+      spanning computer vision, real-time video, embedded hardware, and web.</p>
+      <p class="note">📷 Replace the placeholder image in each card with a real screenshot (see <code>README</code> in the repo).</p>
+    </section>
+
+    <section class="projects">
+
+      <!-- PROJECT 1 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-streaming.svg" alt="Video streaming platform" />
+        </div>
+        <div class="project-body">
+          <h2>WebRTC Streaming & Classroom Platform</h2>
+          <p class="project-problem"><strong>Problem:</strong> Remote classrooms needed low-latency, real-time audio/video/text communication plus exams, assignments, and student management.</p>
+          <p><strong>What I built:</strong> A WebRTC-based platform enabling live audio/video/text chat with full classroom workflows — assignments, exams, and student administration.</p>
+          <p><strong>My role:</strong> Lead developer — architecture, signaling, and cross-platform clients.</p>
+          <div class="tags">
+            <span>WebRTC</span><span>C++ / Qt</span><span>JavaScript</span><span>Real-time</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-camera.svg" alt="Network camera recorder" />
+        </div>
+        <div class="project-body">
+          <h2>Network Camera Recorder with Analytics</h2>
+          <p class="project-problem"><strong>Problem:</strong> Surveillance systems needed recording plus intelligent analytics to reduce manual monitoring.</p>
+          <p><strong>What I built:</strong> A Qt-based recorder integrating object detection/recognition, motion detection, and email-alert systems — with cross-platform viewer clients for Windows, Web, iOS, and Android.</p>
+          <p><strong>My role:</strong> Senior developer — server engine, analytics integration, and client apps.</p>
+          <div class="tags">
+            <span>Qt / QML</span><span>OpenCV</span><span>C++</span><span>Computer Vision</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-vision.svg" alt="Computer vision system" />
+        </div>
+        <div class="project-body">
+          <h2>Embedded Computer Vision (BeagleBoard / Raspberry Pi)</h2>
+          <p class="project-problem"><strong>Problem:</strong> Industrial use cases required on-device vision — fire/cloud detection during explosions and dimension measurement — on resource-constrained hardware.</p>
+          <p><strong>What I built:</strong> OpenCV-based vision applications running on BeagleBoard and Raspberry Pi, including cross-compiled Linux kernels and camera-recorder solutions with detection & alerts.</p>
+          <p><strong>My role:</strong> Design engineer — vision algorithms, embedded porting, and kernel cross-compilation.</p>
+          <div class="tags">
+            <span>OpenCV</span><span>Python / C++</span><span>Embedded Linux</span><span>Raspberry Pi</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-intercom.svg" alt="WebRTC intercom system" />
+        </div>
+        <div class="project-body">
+          <h2>Raspberry Pi WebRTC Intercom</h2>
+          <p class="project-problem"><strong>Problem:</strong> A door/intercom system needed live two-way audio/video accessible from mobile devices.</p>
+          <p><strong>What I built:</strong> A Raspberry Pi intercom with WebRTC streaming and native Android & iOS client apps for real-time communication.</p>
+          <p><strong>My role:</strong> Full ownership — hardware integration, signaling, and mobile clients.</p>
+          <div class="tags">
+            <span>WebRTC</span><span>Raspberry Pi</span><span>Android</span><span>iOS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 5 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-web.svg" alt="Access control web application" />
+        </div>
+        <div class="project-body">
+          <h2>Access Control & Remote Door Web System</h2>
+          <p class="project-problem"><strong>Problem:</strong> Facilities needed centralized management of access control and remote door operations over the web.</p>
+          <p><strong>What I built:</strong> A web application for managing access-control systems and remote door operations, built on Apache, MySQL, and PHP on Ubuntu.</p>
+          <p><strong>My role:</strong> Backend & web developer.</p>
+          <div class="tags">
+            <span>PHP</span><span>MySQL</span><span>Apache</span><span>Linux</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 6 -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-beacon.svg" alt="Beacon configuration app" />
+        </div>
+        <div class="project-body">
+          <h2>Beacon Configuration & Ad Management</h2>
+          <p class="project-problem"><strong>Problem:</strong> Beacon-based advertisement systems for smartphones needed an easy way to configure and manage devices.</p>
+          <p><strong>What I built:</strong> A Qt desktop application to configure beacons and manage beacon-driven advertisement delivery to smartphones.</p>
+          <p><strong>My role:</strong> Application developer — UI and device communication.</p>
+          <div class="tags">
+            <span>Qt / QML</span><span>C++</span><span>BLE Beacons</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="section contact">
+      <h2 class="section-title">Want to see more?</h2>
+      <p class="contact-lead">Happy to share code samples and walk through any project.</p>
+      <div class="contact-buttons">
+        <a class="btn btn-primary" href="mailto:harisprp@gmail.com">Get in Touch</a>
+        <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">Upwork Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Haris P P · Software Developer</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
