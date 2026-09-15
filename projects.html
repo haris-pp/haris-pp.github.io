@@ -37,7 +37,24 @@
       <!-- RECENT 1 — Screen Recorder -->
       <article class="project">
         <div class="project-media">
-          <img src="assets/project-screenrec.svg" alt="Replay Video Capture screen recording app" />
+          <img src="assets/streamobx.jpg" alt="Streambox – Cross-Platform Music Streaming Desktop App (Qt 6 / C++)" />
+        </div>
+        <div class="project-body">
+          <h2>Music Streaming Desktop App <span class="badge">Windows &amp; macOS</span></h2>
+          <p class="project-problem">Streambox is a desktop music streaming client for Windows and macOS, 
+            built with Qt 6 and C++. I migrated the codebase from Qt 5.15 to 6.7, 
+            added a universal macOS build with signed DMG packaging, and delivered a full UI refresh (login, playlists, charts, search). I fixed a login freeze on large libraries (1,800+ songs) by batching SQLite writes into scoped transactions, cutting sync time ~31×. I also added AES encryption for user data via OpenSSL and integrated the app with a companion DJ application through a shared database.</p>
+          <p class="project-link"><a href="https://djstream.music-worx.com/streambox/" target="_blank" rel="noopener">↗ djstream.music-worx.com/streambox/</a></p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>Windows</span><span>macOS</span><span>Streaming</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- RECENT 1 — Screen Recorder -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-screenrec.png" alt="Replay Video Capture screen recording app" />
         </div>
         <div class="project-body">
           <h2>Screen Recording Application <span class="badge">Windows &amp; macOS</span></h2>
@@ -54,7 +71,7 @@
       <!-- RECENT 2 — Teleteens -->
       <article class="project">
         <div class="project-media">
-          <img src="assets/project-teleteens.svg" alt="Teleteens parental control app" />
+          <img src="assets/project-teleteens.png" alt="Teleteens parental control app" />
         </div>
         <div class="project-body">
           <h2>Parental Control Application <span class="badge">Windows</span></h2>
@@ -81,6 +98,41 @@
           <p class="project-link"><a href="https://djstream.music-worx.com/mixworx/" target="_blank" rel="noopener">↗ djstream.music-worx.com/mixworx</a></p>
           <div class="tags">
             <span>Audio Streaming</span><span>Web</span><span>Real-time</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/streamify.jpg" alt="Streamify – Cross-Platform Desktop Audio Recording App for DJs" />
+        </div>
+        <div class="project-body">
+          <h2>Audio Recording App for DJs <span class="badge">Windows &amp; macOS</span></h2>
+          <p class="project-problem">Built Streamify, a Windows/macOS desktop app that lets DJs record live 
+            sets and upload them automatically to the cloud. Developed in C++ with JUCE and CMake, it 
+            supports live and offline recording with a resilient upload queue, retry logic and credit 
+            verification against a REST backend. Added session history, DJ controller integration, 
+            IP-based geolocation for venue tagging, code signing and Inno Setup installers. 
+            Result: a stable, one-click recording workflow that mirrors 
+            the client's Android app and stores sets reliably on Wasabi object storage.</p>
+          <p class="project-link"><a href="https://streamifystg.streamify.ch/" target="_blank" rel="noopener">↗ streamifystg.streamify.ch/</a></p>
+          <div class="tags">
+            <span>C++ / Juce</span><span>Windows</span><span>macOS</span><span>Audio & Music Software</span>
+          </div>
+        </div>
+      </article>
+
+       <!-- Trading App -->
+      <article class="project">
+        <div class="project-media">
+          <img src="assets/project-trading.png" alt="Trading application" />
+        </div>
+        <div class="project-body">
+          <h2>Trading Application</h2>
+          <p class="project-problem">Traders needed a responsive cross-platform desktop client for monitoring and executing trades. I built a cross-platform desktop trading client built with Qt/C++.
+It communicate local database, exchange socket etc.</p>
+          <div class="tags">
+            <span>C++ / Qt</span><span>Desktop</span><span>Real-time Data</span>
           </div>
         </div>
       </article>
@@ -155,21 +207,7 @@
         </div>
       </article>
 
-      <!-- Trading App -->
-      <article class="project">
-        <div class="project-media">
-          <img src="assets/project-trading.svg" alt="Trading application" />
-        </div>
-        <div class="project-body">
-          <h2>Trading Application</h2>
-          <p class="project-problem"><strong>Problem:</strong> Traders needed a responsive cross-platform desktop client for monitoring and executing trades.</p>
-          <p><strong>What I built:</strong> A cross-platform desktop trading client built with Qt/C++.</p>
-          <p><strong>My role:</strong> Desktop developer.</p>
-          <div class="tags">
-            <span>C++ / Qt</span><span>Desktop</span><span>Real-time Data</span>
-          </div>
-        </div>
-      </article>
+     
 
       <!-- Embedded CV -->
       <article class="project">
