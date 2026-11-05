@@ -122,6 +122,17 @@ h2{font-size:clamp(1.8rem,3.6vw,2.4rem);letter-spacing:-1px;line-height:1.15;mar
 .proj p{color:var(--dim);font-size:.95rem;margin-bottom:10px}
 .proj p strong{color:var(--text);font-weight:600}
 .proj .chips{margin:14px 0 0}
+.media{display:grid;gap:10px;min-width:0}
+.media .main{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--bg-2)}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.thumbs button{flex:0 0 auto;width:88px;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--card);cursor:pointer;overflow:hidden;font:inherit;color:var(--dim);text-align:center}
+.thumbs button img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:0;border:0}
+.thumbs button span{display:block;font-size:.72rem;padding:3px 0 4px}
+.thumbs button:hover{border-color:var(--line-hi);color:var(--text)}
+.thumbs button.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 20%,transparent)}
+.all-card{justify-content:center;background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 10%,var(--card)),var(--card));border-style:dashed}
+.all-card .b{justify-content:center}
+.all-card .go{color:var(--accent)}
 .proj .go{display:inline-block;margin-top:4px;color:var(--accent)}
 .proj .go:hover{text-decoration:underline;text-underline-offset:3px}
 
