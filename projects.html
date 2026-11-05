@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-309J85LGWX"></script>
 <script>
@@ -105,7 +105,10 @@
       <div class="plist">
 
         <article class="proj">
-          <img src="assets/streamobx.jpg" alt="Streambox cross-platform music streaming desktop app" loading="lazy" />
+          <div class="media">
+            <img class="main" src="assets/projects/streambox.webp" alt="Streambox music streaming desktop app" loading="lazy" />
+            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/streambox.webp" data-alt="Streambox music streaming desktop app"><img src="assets/projects/streambox.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streambox-1.webp" data-alt="Streambox track list with BPM, key and genre"><img src="assets/projects/streambox-1.webp" alt="" loading="lazy" /><span>Tracks</span></button><button type="button" data-src="assets/projects/streambox-2.webp" data-alt="Streambox home with recently added playlists and charts"><img src="assets/projects/streambox-2.webp" alt="" loading="lazy" /><span>Home</span></button></div>
+          </div>
           <div>
             <span class="meta">Qt 6 · C++ · Windows &amp; macOS</span>
             <h3>Streambox — music streaming desktop app</h3>
@@ -117,7 +120,10 @@
         </article>
 
         <article class="proj">
-          <img src="assets/streamify.jpg" alt="Streamify desktop audio recording app for DJs" loading="lazy" />
+          <div class="media">
+            <img class="main" src="assets/projects/streamify.webp" alt="Streamify DJ recording app" loading="lazy" />
+            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/streamify.webp" data-alt="Streamify DJ recording app"><img src="assets/projects/streamify.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streamify-1.webp" data-alt="Streamify streaming history of uploaded recordings"><img src="assets/projects/streamify-1.webp" alt="" loading="lazy" /><span>History</span></button><button type="button" data-src="assets/projects/streamify-2.webp" data-alt="Streamify profile with credits and usage stats"><img src="assets/projects/streamify-2.webp" alt="" loading="lazy" /><span>Profile</span></button><button type="button" data-src="assets/projects/streamify-3.webp" data-alt="Streamify login screen"><img src="assets/projects/streamify-3.webp" alt="" loading="lazy" /><span>Login</span></button><button type="button" data-src="assets/projects/streamify-4.webp" data-alt="Streamify ready-to-record screen"><img src="assets/projects/streamify-4.webp" alt="" loading="lazy" /><span>Start</span></button><button type="button" data-src="assets/projects/streamify-5.webp" data-alt="Streamify recording in progress"><img src="assets/projects/streamify-5.webp" alt="" loading="lazy" /><span>Recording</span></button></div>
+          </div>
           <div>
             <span class="meta">JUCE · C++ · Windows &amp; macOS</span>
             <h3>Streamify — audio recording app for DJs</h3>
@@ -129,7 +135,10 @@
         </article>
 
         <article class="proj">
-          <img src="assets/project-screenrec.png" alt="Replay Video Capture screen recording app" loading="lazy" />
+          <div class="media">
+            <img class="main" src="assets/projects/replay.webp" alt="Replay Video Capture screen recording app" loading="lazy" />
+            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/replay.webp" data-alt="Replay Video Capture screen recording app"><img src="assets/projects/replay.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/replay-1.webp" data-alt="Replay Video Capture main capture screen"><img src="assets/projects/replay-1.webp" alt="" loading="lazy" /><span>Capture</span></button><button type="button" data-src="assets/projects/replay-2.webp" data-alt="Replay Video Capture audio and video settings"><img src="assets/projects/replay-2.webp" alt="" loading="lazy" /><span>Settings</span></button></div>
+          </div>
           <div>
             <span class="meta">Qt · C++ · Windows &amp; macOS</span>
             <h3>Replay Video Capture — screen recording</h3>
@@ -140,7 +149,7 @@
         </article>
 
         <article class="proj">
-          <img src="assets/project-mixworx.png" alt="MixWorx DJ and audio broadcasting software" loading="lazy" />
+          <img class="main" src="assets/projects/mixworx.webp" alt="MixWorx DJ software with decks, mixer and track library" loading="lazy" />
           <div>
             <span class="meta">Audio · Real-time · Web</span>
             <h3>MixWorx — DJ &amp; audio broadcasting</h3>
@@ -162,12 +171,24 @@
         </article>
 
         <article class="proj">
-          <img src="assets/project-trading.png" alt="Desktop trading application" loading="lazy" />
+          <img class="main" src="assets/projects/trading.webp" alt="Algo trading client with trades, positions, algorithms and missed trades" loading="lazy" />
           <div>
             <span class="meta">Qt · C++ · Desktop</span>
-            <h3>Desktop trading client</h3>
-            <p>Traders needed a fast cross-platform desktop client to monitor and place trades. I built it in Qt/C++. It connects to exchange sockets and keeps data in a local database.</p>
-            <div class="chips"><span>C++ / Qt</span><span>WebSockets</span><span>Real-time data</span></div>
+            <h3>Algo trading client</h3>
+            <p>Traders needed a fast desktop client to run options strategies and watch them in real time. I built it in Qt/C++.</p>
+            <p>Users build and run algorithms, then follow trades, positions, missed trades and running strategies in docked panels. The app connects to exchange sockets and keeps data in a local database.</p>
+            <div class="chips"><span>C++ / Qt</span><span>WebSockets</span><span>Real-time data</span><span>Local database</span></div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <img class="main" src="assets/projects/torq.webp" alt="TORQ trading dashboard with market watch, index ticker and activity logs" loading="lazy" />
+          <div>
+            <span class="meta">Desktop · REST API · WebSocket</span>
+            <h3>TORQ — trading dashboard</h3>
+            <p>A trading terminal with a dashboard, market watch lists, a live index ticker, orders and positions, and algo tools.</p>
+            <p>Trading data comes from a REST API, live prices stream in over WebSocket, and the app stores its data in a database. An activity log shows each session event as it happens.</p>
+            <div class="chips"><span>REST API</span><span>WebSocket</span><span>Live market data</span><span>Database</span></div>
           </div>
         </article>
 
@@ -218,6 +239,15 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.media').forEach(function (m) {
+      var main = m.querySelector('.main');
+      m.querySelectorAll('.thumbs button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          m.querySelectorAll('.thumbs button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          main.src = b.dataset.src; main.alt = b.dataset.alt;
+        });
+      });
+    });
     document.getElementById('shot-tabs').addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
       this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
