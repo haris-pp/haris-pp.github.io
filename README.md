@@ -2,8 +2,10 @@
 
 A simple, fast two-page portfolio for `haris-pp.github.io`:
 
-- **Home** (`index.html`) — intro, skills, experience, education, contact, resume download
-- **Projects** (`projects.html`) — 6-project showcase on a single page
+- **Home** (`index.html`) — intro, RecoraCam NVR spotlight, recent client work, skills, experience, contact
+- **Projects** (`projects.html`) — RecoraCam NVR in detail, full client project write-ups, earlier work
+
+RecoraCam screenshots live in `assets/recoracam/` (copied from https://haris-pp.github.io/recoracam-website/).
 
 ## 🚀 Deploy to GitHub Pages
 
@@ -42,7 +44,7 @@ Recommended image size: **~640×440px** (landscape).
 ## ✏️ Editing content
 
 - All text is plain HTML — edit `index.html` / `projects.html` directly.
-- Colors and layout live in `styles.css` (top `:root` block holds the theme colors).
+- Colors and layout live in `styles.css` (the top `:root` block holds the Daylight theme colors).
 - The resume link points to `Haris-Resume.pdf` — replace that file anytime to update it.
 
 ## Tech
