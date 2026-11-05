@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haris P P — Software Developer</title>
-  <meta name="description" content="Haris P P — Software Developer with 14+ years of experience in Desktop, Mobile, Embedded, Web, and Computer Vision development. Available for remote work." />
+  <meta name="description" content="Haris P P — software developer with 14+ years of C++/Qt, Python and computer-vision work. Desktop apps, video pipelines, embedded systems, and RecoraCam NVR, an open-source camera recorder." />
+  <meta property="og:title" content="Haris P P — Software Developer" />
+  <meta property="og:description" content="Desktop, video and computer-vision software. Creator of RecoraCam NVR." />
+  <meta property="og:image" content="https://haris-pp.github.io/assets/recoracam/playback.png" />
+  <meta property="og:url" content="https://haris-pp.github.io/" />
+  <meta name="theme-color" content="#f5f7fa" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-309J85LGWX"></script>
 <script>
@@ -21,150 +26,170 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="brand">Haris<span class="dot">.</span></a>
-      <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="Haris-Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </div>
-    </nav>
-  </header>
+  <header><div class="wrap"><nav>
+    <a href="index.html" class="brand">Haris<span>.</span></a>
+    <div class="links">
+      <a href="#recoracam" class="opt">RecoraCam</a>
+      <a href="#work" class="opt">Work</a>
+      <a href="projects.html">Projects</a>
+      <a href="#about" class="opt">About</a>
+      <a href="Haris-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a href="#contact" class="hire">Hire me</a>
+    </div>
+  </nav></div></header>
 
-  <main>
+  <main class="wrap">
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Software Developer · Remote</p>
-        <h1>Hi, I'm Haris P P.</h1>
-        <p class="lead">
-          I build <strong>desktop, mobile, embedded, and computer-vision</strong> applications.
-          14+ years shipping cross-platform software in C/C++, Qt, Python, and more —
-          from network camera recorders to WebRTC platforms and ML-powered vision systems.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="projects.html">View Projects</a>
-          <a class="btn btn-ghost" href="Haris-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-        </div>
-        <div class="quick-links">
-          <a href="mailto:harisprp@gmail.com">✉ harisprp@gmail.com</a>
-          <a href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">↗ Upwork Profile</a>
-          <span>📍 Kannur, Kerala, India</span>
-        </div>
+    <div class="hero">
+      <div class="pill"><span class="dot"></span>New: <a href="#recoracam">RecoraCam NVR</a><span class="pill-x"> — my open-source camera recorder</span></div>
+      <h1>I build software that <em>records, streams and sees.</em></h1>
+      <p class="lead">Software developer with 14+ years of C++/Qt, Python and computer-vision work.
+        I ship desktop apps, video pipelines and embedded systems for clients worldwide. I also build my own products.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#work">See my work →</a>
+        <a class="btn btn-g" href="mailto:harisprp@gmail.com">harisprp@gmail.com</a>
       </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="skill-groups">
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <div class="tags">
-            <span>C / C++</span><span>Python</span><span>Java</span>
-            <span>JavaScript</span><span>PHP</span><span>HTML</span>
-            <span>Shell Script</span><span>Dart</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Frameworks & Tools</h3>
-          <div class="tags">
-            <span>Qt / QML</span><span>OpenCV (ML)</span><span>TensorFlow</span>
-            <span>Keras</span><span>Flutter</span><span>WebRTC</span><span>FFmpeg</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Platforms</h3>
-          <div class="tags">
-            <span>Windows</span><span>Linux</span><span>macOS</span>
-            <span>Android</span><span>iOS</span><span>Raspberry Pi</span><span>Embedded</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Domains</h3>
-          <div class="tags">
-            <span>Computer Vision</span><span>Video Streaming</span><span>IoT</span>
-            <span>Network Cameras</span><span>Desktop Apps</span><span>Web Backend</span>
-          </div>
-        </div>
+      <div class="stats">
+        <div><b>14+</b><span>years shipping software</span></div>
+        <div><b>6</b><span>platforms: Win, Mac, Linux, Android, iOS, embedded</span></div>
+        <div><b>15+</b><span>products delivered</span></div>
+        <div><b>1</b><span>open-source NVR of my own</span></div>
       </div>
-    </section>
+    </div>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-head">
-            <h3>Full-Time Freelancer</h3>
-            <span class="tl-date">2023 — Present</span>
-          </div>
-          <p class="tl-sub">Remote · Upwork</p>
-          <p>Delivering cross-platform software for international clients — desktop, mobile,
-          embedded, and computer-vision projects across the full development lifecycle.</p>
-        </div>
+    <!-- RECORACAM SPOTLIGHT -->
+    <section id="recoracam">
+      <div class="kicker">My own product</div>
+      <h2>RecoraCam NVR</h2>
+      <p class="sub">I wanted a camera recorder that schedules recording, plays footage back and exports clips, without a cloud account or subscription. I couldn't find one, so I built it.</p>
 
-        <div class="tl-item">
-          <div class="tl-head">
-            <h3>Senior Software Developer — Vappica</h3>
-            <span class="tl-date">Jun 2014 — Dec 2022</span>
-          </div>
-          <p class="tl-sub">Remote · New York, US</p>
-          <ul>
-            <li>Built network camera recorder software in Qt with object detection/recognition, motion detection, and email-alert analytics.</li>
-            <li>Developed cross-platform client apps for Windows (Qt/QML), Android, iOS, and Web.</li>
-            <li>Led a WebRTC classroom platform with audio/video/text chat, assignments, exams, and student management.</li>
-            <li>Created Raspberry Pi camera recorders and an intercom system with WebRTC mobile clients.</li>
-            <li>Built web tooling for access control & remote door operations (Apache, MySQL, PHP, Ubuntu).</li>
+      <div class="spot">
+        <div>
+          <span class="tag">Open source · LGPL v3</span>
+          <h3>Schedule it. Play it back. Download the clip.</h3>
+          <p>A self-hosted video recorder for IP cameras. It runs in your browser and keeps footage on your own disk.</p>
+          <ul class="feat">
+            <li>Weekly 15-minute scheduling grid for many cameras</li>
+            <li>24-hour timeline playback with 6 h and 1 h zoom</li>
+            <li>Exact-clip MP4 export, cut without re-encoding</li>
+            <li>Restarts failed recorders on its own; cleans up old footage when the disk fills</li>
           </ul>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-head">
-            <h3>Design Engineer — NiLogic Pvt Ltd</h3>
-            <span class="tl-date">Jun 2011 — May 2014</span>
+          <div class="chips"><span>Python</span><span>Flask</span><span>FFmpeg</span><span>SQLite</span><span>APScheduler</span><span>video.js</span><span>RTSP</span></div>
+          <div class="cta" style="margin-top:0">
+            <a class="btn btn-p" href="https://haris-pp.github.io/recoracam-website/" target="_blank" rel="noopener">Visit product site ↗</a>
+            <a class="btn btn-g" href="https://github.com/haris-pp/recoracam-nvr" target="_blank" rel="noopener">GitHub</a>
           </div>
-          <p class="tl-sub">Pune, India</p>
-          <ul>
-            <li>Implemented computer-vision apps on BeagleBoard: fire/cloud detection and dimension measurement.</li>
-            <li>Cross-compiled the Linux kernel for BeagleBoard platforms.</li>
-            <li>Built an Android app to control Raspberry Pi GPIO.</li>
-          </ul>
+        </div>
+        <div>
+          <div class="browser">
+            <div class="bar"><i></i><i></i><i></i><span class="url mono" id="shot-url">localhost:5000/playback</span></div>
+            <img id="shot" src="assets/recoracam/playback.png" alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline" width="1440" height="900" />
+          </div>
+          <div class="tabs" id="shot-tabs">
+            <button type="button" data-s="playback" data-alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline" class="on">Playback</button>
+            <button type="button" data-s="home" data-alt="RecoraCam camera wall with status and system stats">Camera wall</button>
+            <button type="button" data-s="schedules" data-alt="RecoraCam weekly scheduling grid">Schedules</button>
+            <button type="button" data-s="download" data-alt="RecoraCam clip export with in and out trim timeline">Clip export</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <h3>M.Sc. Electronics</h3>
-          <p>Cochin University of Science and Technology</p>
+    <!-- CLIENT WORK -->
+    <section id="work">
+      <div class="kicker">Client work</div>
+      <div class="sec-head">
+        <div>
+          <h2>Recent projects</h2>
+          <p class="sub">Desktop software for audio, video and real-time data, built in C++ with Qt and JUCE.</p>
         </div>
-        <div class="edu-card">
-          <h3>B.Sc. Electronics</h3>
-          <p>Kannur University</p>
+        <a class="more" href="projects.html">All project details →</a>
+      </div>
+      <div class="grid">
+        <article class="card"><img src="assets/streamobx.jpg" alt="Streambox music streaming desktop app" loading="lazy" /><div class="b">
+          <span class="meta">Qt 6 · Win / macOS</span><h4>Streambox — music streaming client</h4>
+          <p>Moved the app from Qt 5 to Qt 6 and redesigned the UI. Made library sync about 31× faster.</p>
+          <a class="go" href="https://djstream.music-worx.com/streambox/" target="_blank" rel="noopener">View ↗</a></div></article>
+        <article class="card"><img src="assets/streamify.jpg" alt="Streamify DJ audio recording app" loading="lazy" /><div class="b">
+          <span class="meta">JUCE · Win / macOS</span><h4>Streamify — DJ set recorder</h4>
+          <p>Records live sets and uploads them to the cloud, retrying failed uploads. Works with DJ controllers.</p>
+          <a class="go" href="https://streamifystg.streamify.ch/" target="_blank" rel="noopener">View ↗</a></div></article>
+        <article class="card"><img src="assets/project-screenrec.png" alt="Replay Video Capture screen recording app" loading="lazy" /><div class="b">
+          <span class="meta">Qt · Win / macOS</span><h4>Replay Video Capture</h4>
+          <p>Records screen video and audio on Windows and macOS. I built the capture engine and the UI.</p>
+          <a class="go" href="https://applian.com/replay-video-capture/" target="_blank" rel="noopener">View ↗</a></div></article>
+        <article class="card"><img src="assets/project-mixworx.png" alt="MixWorx DJ broadcasting software" loading="lazy" /><div class="b">
+          <span class="meta">Audio · Real-time</span><h4>MixWorx — DJ broadcasting</h4>
+          <p>Lets DJs mix tracks and broadcast live audio to listeners online.</p>
+          <a class="go" href="https://djstream.music-worx.com/mixworx/" target="_blank" rel="noopener">View ↗</a></div></article>
+        <article class="card"><img src="assets/project-teleteens.png" alt="Teleteens parental control app" loading="lazy" /><div class="b">
+          <span class="meta">Qt · Windows</span><h4>Teleteens — parental control</h4>
+          <p>A Windows app that lets parents monitor and manage how their children use the device.</p>
+          <a class="go" href="https://teleteens.co/" target="_blank" rel="noopener">View ↗</a></div></article>
+        <article class="card"><img src="assets/project-trading.png" alt="Desktop trading application" loading="lazy" /><div class="b">
+          <span class="meta">Qt · Real-time data</span><h4>Desktop trading client</h4>
+          <p>A cross-platform client that connects to exchange sockets and stores data in a local database.</p></div></article>
+      </div>
+      <div class="earlier">
+        <div><b>Network camera recorder with analytics</b><span>Qt · OpenCV · HLS live view, object and motion detection</span></div>
+        <div><b>WebRTC classroom platform</b><span>Live audio and video, assignments and exams. I led the project.</span></div>
+        <div><b>Access control and remote doors</b><span>Web and desktop · PHP, MySQL, Linux</span></div>
+        <div><b>Embedded vision on BeagleBoard and Raspberry Pi</b><span>Fire and cloud detection, dimension measurement</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="two">
+        <div>
+          <div class="kicker">Toolkit</div>
+          <h2>What I work with</h2>
+          <div class="sk">
+            <div><h5>Languages</h5><div class="chips"><span>C / C++</span><span>Python</span><span>Java</span><span>JavaScript</span><span>Dart</span><span>PHP</span><span>Shell</span></div></div>
+            <div><h5>Frameworks</h5><div class="chips"><span>Qt / QML</span><span>JUCE</span><span>OpenCV</span><span>FFmpeg</span><span>WebRTC</span><span>Flask</span><span>Flutter</span><span>TensorFlow</span><span>Keras</span></div></div>
+            <div><h5>Platforms</h5><div class="chips"><span>Windows</span><span>macOS</span><span>Linux</span><span>Android</span><span>iOS</span><span>Raspberry Pi</span><span>Embedded Linux</span></div></div>
+            <div><h5>Domains</h5><div class="chips"><span>Computer vision</span><span>Video streaming</span><span>Audio software</span><span>Network cameras</span><span>IoT</span></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="kicker">Experience</div>
+          <h2>Where I've worked</h2>
+          <div class="exp">
+            <div><small>2023 — now</small><b>Independent developer · Upwork</b><p>Desktop, audio/video and computer-vision projects for clients around the world. I also build RecoraCam.</p></div>
+            <div><small>2014 — 2022</small><b>Senior Software Developer · Vappica (NY, remote)</b><p>Built camera recorder software, a WebRTC classroom, Raspberry Pi recorders and an intercom system.</p></div>
+            <div><small>2011 — 2014</small><b>Design Engineer · NiLogic, Pune</b><p>Built computer-vision apps on BeagleBoard and cross-compiled Linux kernels.</p></div>
+            <div><small>Education</small><b>M.Sc. Electronics · CUSAT</b><p>B.Sc. Electronics · Kannur University</p></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <h2 class="section-title">Let's work together</h2>
-      <p class="contact-lead">Open to remote roles and freelance projects. The fastest way to reach me:</p>
-      <div class="contact-buttons">
-        <a class="btn btn-primary" href="mailto:harisprp@gmail.com">Email Me</a>
-        <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">Hire on Upwork</a>
+    <section id="contact">
+      <div class="contact">
+        <div class="kicker">Available for remote work</div>
+        <h2>Have a project in mind?</h2>
+        <p class="sub">Desktop apps, video pipelines, embedded vision. I'm happy to talk it through.</p>
+        <div class="cta">
+          <a class="btn btn-p" href="mailto:harisprp@gmail.com">Email me</a>
+          <a class="btn btn-g" href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">Hire on Upwork ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Haris P P · Software Developer</p>
-  </footer>
+  <footer>© <span id="year"></span> Haris P P · Kannur, Kerala, India</footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('shot-tabs').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+      var img = document.getElementById('shot');
+      img.src = 'assets/recoracam/' + b.dataset.s + '.png';
+      img.alt = b.dataset.alt;
+      document.getElementById('shot-url').textContent = 'localhost:5000/' + b.dataset.s;
+    });
+  </script>
 </body>
 </html>
