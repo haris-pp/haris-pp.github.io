@@ -3,9 +3,12 @@
 A simple, fast two-page portfolio for `haris-pp.github.io`:
 
 - **Home** (`index.html`) — intro, RecoraCam NVR spotlight, recent client work, skills, experience, contact
-- **Projects** (`projects.html`) — RecoraCam NVR in detail, full client project write-ups, earlier work
+- **Projects** (`projects.html`) — my own products, RecoraCam NVR and AI Video Investigator, in detail; full client project write-ups; earlier work
 
-RecoraCam screenshots live in `assets/recoracam/` (copied from https://haris-pp.github.io/recoracam-website/).
+Product screenshots:
+
+- RecoraCam NVR: `assets/recoracam/` (copied from https://haris-pp.github.io/recoracam-website/)
+- AI Video Investigator: `assets/aivideoinvestigator/` (from https://haris-pp.github.io/aivideoinvestigator-website/)
 
 ## 🚀 Deploy to GitHub Pages
 
