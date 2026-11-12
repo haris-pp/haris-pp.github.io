@@ -43,7 +43,7 @@
     <div class="hero small">
       <div class="kicker">Selected work</div>
       <h1>Projects</h1>
-      <p class="lead">My own product, RecoraCam NVR, followed by the client systems I've designed and shipped: Qt/C++ and JUCE desktop apps, screen recording, real-time audio and video, computer vision and embedded hardware.</p>
+      <p class="lead">My own products, RecoraCam NVR and AI Video Investigator, followed by the client systems I've designed and shipped: Qt/C++ and JUCE desktop apps, screen recording, real-time audio and video, computer vision and embedded hardware.</p>
     </div>
 
     <!-- ============ RECORACAM ============ -->
@@ -97,6 +97,45 @@
         <figure><img src="assets/recoracam/settings.png" alt="Storage and clean-up settings" loading="lazy" /><figcaption>Storage and clean-up settings</figcaption></figure>
         <figure><img src="assets/recoracam/playback.png" alt="Timeline playback" loading="lazy" /><figcaption>24-hour timeline playback</figcaption></figure>
       </div>
+    </section>
+
+    <!-- ============ AI VIDEO INVESTIGATOR ============ -->
+    <section id="aivideoinvestigator">
+      <div class="kicker">My own product · 2026</div>
+      <h2>AI Video Investigator</h2>
+      <p class="sub">Finding one moment in hours of camera footage usually means scrubbing video by hand. AI Video Investigator records the cameras, detects every person and vehicle, and lets you search the footage in plain English, all on one PC.</p>
+
+      <div class="spot">
+        <div>
+          <span class="tag">C++ · computer vision · local AI</span>
+          <h3>Ask your cameras what happened.</h3>
+          <p>Type "white car at Staff Parking" or "people playing basketball" and jump to the moment. Watch live, scrub a 24-hour timeline and cut the clip in a second. No cloud: footage, detection and search stay on the PC.</p>
+          <ul class="feat">
+            <li>YOLOv8 detection on ONNX Runtime, tracked so each object is one event</li>
+            <li>Plain-English search, with an optional local language model (llama.cpp)</li>
+            <li>Visual search with CLIP: describe how it looks, results ranked by match</li>
+            <li>WebRTC live wall, 24-hour timeline and clip export without re-encoding</li>
+          </ul>
+          <div class="chips"><span>C++17 / Qt 6</span><span>Drogon</span><span>ONNX Runtime</span><span>YOLOv8</span><span>CLIP</span><span>llama.cpp</span><span>FFmpeg</span><span>go2rtc</span><span>SQLite</span></div>
+          <div class="cta" style="margin-top:0">
+            <a class="btn btn-p" href="https://haris-pp.github.io/aivideoinvestigator-website/" target="_blank" rel="noopener">Visit product site ↗</a>
+            <a class="btn btn-g" href="https://haris-pp.github.io/aivideoinvestigator-website/#demo" target="_blank" rel="noopener">Watch the demo</a>
+          </div>
+        </div>
+        <div>
+          <div class="browser">
+            <div class="bar"><i></i><i></i><i></i><span class="url mono">127.0.0.1 · live view</span></div>
+            <img src="assets/aivideoinvestigator/live.webp" alt="AI Video Investigator live view: a nine-camera wall with a camera list and today's detections" width="1440" height="810" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure><img src="assets/aivideoinvestigator/search.webp" alt="Search results for white car at Staff Parking" loading="lazy" /><figcaption>Plain-English search</figcaption></figure>
+        <figure><img src="assets/aivideoinvestigator/visual.webp" alt="Visual search results for people playing basketball" loading="lazy" /><figcaption>Visual search with CLIP</figcaption></figure>
+        <figure><img src="assets/aivideoinvestigator/playback.webp" alt="Playback with a 24-hour timeline of people, vehicles and motion" loading="lazy" /><figcaption>Timeline and clip export</figcaption></figure>
+      </div>
+      <p class="sub" style="font-size:.85rem;margin-top:14px">Demo footage: MEVA dataset by Kitware Inc. and IARPA (mevadata.org), CC BY 4.0.</p>
     </section>
 
     <!-- ============ RECENT CLIENT WORK ============ -->
