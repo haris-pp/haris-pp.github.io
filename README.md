@@ -47,7 +47,7 @@ Recommended image size: **~640×440px** (landscape).
 ## ✏️ Editing content
 
 - All text is plain HTML — edit `index.html` / `projects.html` directly.
-- Colors and layout live in `styles.css` (the top `:root` block holds the Daylight theme colors).
+- Colors and layout live in `styles.css` (the top `:root` block holds the "Paper" design colours).
 - The resume link points to `Haris-Resume.pdf` — replace that file anytime to update it.
 
 ## Tech

@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Haris P P</title>
-  <meta name="description" content="Projects by Haris P P: RecoraCam NVR, Qt/C++ and JUCE desktop apps, screen recording, audio streaming, computer vision and embedded systems." />
+  <meta name="description" content="Projects by Haris P P: AI Video Investigator, RecoraCam NVR, and Qt/C++ and JUCE desktop apps for audio, video and real-time data." />
   <meta property="og:title" content="Projects — Haris P P" />
-  <meta property="og:description" content="RecoraCam NVR plus desktop, audio/video and computer-vision client work." />
-  <meta property="og:image" content="https://haris-pp.github.io/assets/recoracam/playback.png" />
+  <meta property="og:description" content="AI Video Investigator, RecoraCam NVR, and desktop, audio/video and computer-vision client work." />
+  <meta property="og:image" content="https://haris-pp.github.io/assets/aivideoinvestigator/live.webp" />
   <meta property="og:url" content="https://haris-pp.github.io/projects.html" />
-  <meta name="theme-color" content="#f5f7fa" />
+  <meta name="theme-color" content="#fbfbf9" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-309J85LGWX"></script>
 <script>
@@ -27,275 +27,116 @@
 
 <body>
   <header><div class="wrap"><nav>
-    <a href="index.html" class="brand">Haris<span>.</span></a>
+    <a class="logo" href="index.html">Haris P P<span>.</span></a>
     <div class="links">
-      <a href="index.html">Home</a>
-      <a href="#recoracam" class="opt">Products</a>
+      <a href="index.html" class="opt">Home</a>
+      <a href="#products" class="opt">Products</a>
       <a href="#work" class="opt">Work</a>
-      <a href="projects.html" class="active opt">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="index.html#about" class="opt">About</a>
-      <a href="Haris-Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      <a href="index.html#contact" class="hire">Hire me</a>
+      <a href="Haris-Resume.pdf" class="opt2" target="_blank" rel="noopener">Resume</a>
+      <a href="#contact" class="cta">Get in touch</a>
     </div>
   </nav></div></header>
 
   <main class="wrap">
-    <div class="hero small">
-      <div class="kicker">Selected work</div>
+    <div class="hero page">
+      <div class="status">Selected work · 2011 — 2026</div>
       <h1>Projects</h1>
-      <p class="lead">My own products, RecoraCam NVR and AI Video Investigator, followed by the client systems I've designed and shipped: Qt/C++ and JUCE desktop apps, screen recording, real-time audio and video, computer vision and embedded hardware.</p>
+      <p>My own products, AI Video Investigator and RecoraCam NVR, followed by the client systems I've designed and shipped: Qt/C++ and JUCE desktop apps, screen recording, real-time audio and video, trading tools and embedded hardware.</p>
     </div>
 
-    <!-- ============ RECORACAM ============ -->
-    <section id="recoracam">
-      <div class="kicker">My own product · 2026</div>
-      <h2>RecoraCam NVR</h2>
-      <p class="sub">Small sites with a few IP cameras usually choose between expensive cloud plans and clunky vendor software. Neither lets you just schedule recording and pull out one exact clip. RecoraCam does that, and keeps every frame on your own disk.</p>
-
-      <div class="spot">
-        <div>
-          <span class="tag">Open source · LGPL v3</span>
-          <h3>Schedule it. Play it back. Download the clip.</h3>
-          <p>A self-hosted video recorder for IP cameras. Plan the week on a 15-minute grid, scrub a 24-hour timeline to find a moment, and export the exact clip as MP4. No cloud, no account, no subscription.</p>
-          <ul class="feat">
-            <li>Records RTSP, RTMP, HTTP, UDP and SRT streams without re-encoding</li>
-            <li>Footage saved as plain 10-second files, so the folder itself is the index</li>
-            <li>GPU (NVIDIA) or CPU transcoding for codecs browsers can't play</li>
-            <li>Demo mode with simulated cameras, so you can try it without hardware</li>
-          </ul>
-          <div class="chips"><span>Python</span><span>Flask</span><span>FFmpeg</span><span>SQLite</span><span>APScheduler</span><span>video.js</span><span>go2rtc</span></div>
-          <div class="cta" style="margin-top:0">
-            <a class="btn btn-p" href="https://haris-pp.github.io/recoracam-website/" target="_blank" rel="noopener">Visit product site ↗</a>
-            <a class="btn btn-g" href="https://github.com/haris-pp/RecoraCamNVR" target="_blank" rel="noopener">Source on GitHub</a>
-          </div>
-        </div>
-        <div>
-          <div class="browser">
-            <div class="bar"><i></i><i></i><i></i><span class="url mono" id="shot-url">localhost:5000/playback</span></div>
-            <img id="shot" src="assets/recoracam/playback.png" alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline" width="1440" height="900" />
-          </div>
-          <div class="tabs" id="shot-tabs">
-            <button type="button" data-s="playback" data-alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline" class="on">Playback</button>
-            <button type="button" data-s="home" data-alt="RecoraCam camera wall with status and system stats">Camera wall</button>
-            <button type="button" data-s="schedules" data-alt="RecoraCam weekly scheduling grid">Schedules</button>
-            <button type="button" data-s="download" data-alt="RecoraCam clip export with in and out trim timeline">Clip export</button>
-          </div>
-        </div>
+    <div class="sh" id="products"><h2><span class="n">01</span>Products</h2><p>Designed, built and maintained by me.</p></div>
+    <article class="product" id="aivideoinvestigator">
+      <div class="viewer" data-switch><div class="pic"><img class="js-main" src="assets/aivideoinvestigator/live.webp" alt="Live view: a four-camera wall with a camera list and today&#x27;s detections" /></div><div class="tabs"><button type="button" class="on" data-src="assets/aivideoinvestigator/live.webp" data-alt="Live view: a four-camera wall with a camera list and today&#x27;s detections">Live view</button><button type="button" data-src="assets/aivideoinvestigator/search.webp" data-alt="Search results for white car at Staff Parking">Search</button><button type="button" data-src="assets/aivideoinvestigator/visual.webp" data-alt="Visual search results for people sitting on a bench">Visual search</button><button type="button" data-src="assets/aivideoinvestigator/playback.webp" data-alt="Playback with a 24-hour timeline of people, vehicles and motion">Timeline</button></div></div>
+      <div>
+        <span class="yr">2026 · C++17 / Qt 6 · Local AI</span>
+        <h3>AI Video Investigator</h3>
+        <div class="tagline">Ask your cameras what happened.</div>
+        <p>Finding one moment in hours of camera footage usually means scrubbing video by hand. AI Video Investigator records the cameras, detects every person and vehicle, and lets you search the footage in plain English.</p><p>Type “white car at Staff Parking” or “people sitting on a bench” and jump to the moment. Watch live, scrub a 24-hour timeline and cut the clip in a second. Footage, detection and search stay on the PC.</p>
+        <ul class="ticks"><li>YOLOv8 detection on ONNX Runtime, tracked so each object is one event</li><li>Plain-English search, with an optional local language model (llama.cpp)</li><li>Visual search with CLIP: describe how it looks, results ranked by match</li><li>WebRTC live wall, 24-hour timeline and clip export without re-encoding</li></ul>
+        <div class="stack">C++17 · Qt 6 · Drogon · ONNX Runtime · YOLOv8 · CLIP · llama.cpp · FFmpeg · go2rtc · SQLite</div>
+        <div class="lk"><a href="https://haris-pp.github.io/aivideoinvestigator-website/" target="_blank" rel="noopener">Product site ↗</a><a href="https://haris-pp.github.io/aivideoinvestigator-website/#demo" target="_blank" rel="noopener">Watch the demo ↗</a></div>
       </div>
-
-      <div class="rc-detail">
-        <div><h4>Scheduling</h4><p>Weekly 15-minute grid for one or many cameras, with quick fills for 24/7, business hours, nights and weekends. Plans can be copied between cameras.</p></div>
-        <div><h4>Reliability</h4><p>A supervisor restarts failed recorders with growing delays. Every 60 seconds, a check restarts any camera that should be recording but isn't.</p></div>
-        <div><h4>Storage</h4><p>When the disk passes a limit (85% by default), the oldest days are deleted first across all cameras, at times you choose.</p></div>
+    </article>
+    <div class="detail"><div><h4>Detection</h4><p>YOLOv8 runs on ONNX Runtime and tracks each person and vehicle, so one object becomes one event, not hundreds of frames.</p></div><div><h4>Search</h4><p>Plain-English queries become filters for type, colour and camera. CLIP adds visual search for things the filters can&#x27;t describe.</p></div><div><h4>Local first</h4><p>Recording, detection and search all run on one PC. No footage leaves the machine, and there is no subscription.</p></div></div>
+    <p class="credit">Demo footage: MEVA dataset by Kitware Inc. and IARPA (mevadata.org), CC BY 4.0.</p>
+    <article class="product flip" id="recoracam">
+      <div class="viewer" data-switch><div class="pic"><img class="js-main" src="assets/recoracam/playback.png" alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline" loading="lazy" /></div><div class="tabs"><button type="button" class="on" data-src="assets/recoracam/playback.png" data-alt="RecoraCam playback screen with camera list, calendar and 24-hour timeline">Playback</button><button type="button" data-src="assets/recoracam/home.png" data-alt="RecoraCam camera wall with status and system stats">Camera wall</button><button type="button" data-src="assets/recoracam/schedules.png" data-alt="RecoraCam weekly scheduling grid">Schedules</button><button type="button" data-src="assets/recoracam/download.png" data-alt="RecoraCam clip export with in and out trim timeline">Clip export</button><button type="button" data-src="assets/recoracam/cameras.png" data-alt="RecoraCam camera list and stream settings">Cameras</button><button type="button" data-src="assets/recoracam/settings.png" data-alt="RecoraCam storage and clean-up settings">Settings</button></div></div>
+      <div>
+        <span class="yr">2026 · Python · Open source (LGPL v3)</span>
+        <h3>RecoraCam NVR</h3>
+        <div class="tagline">Schedule it. Play it back. Download the clip.</div>
+        <p>Small sites with a few IP cameras usually choose between expensive cloud plans and clunky vendor software. Neither lets you just schedule recording and pull out one exact clip.</p><p>RecoraCam plans the week on a 15-minute grid, lets you scrub a 24-hour timeline to find a moment, and exports the exact clip as MP4. Every frame stays on your own disk.</p>
+        <ul class="ticks"><li>Weekly 15-minute scheduling grid for many cameras</li><li>Records RTSP, RTMP, HTTP, UDP and SRT without re-encoding</li><li>24-hour timeline playback with 6 h and 1 h zoom</li><li>Exact-clip MP4 export, with GPU or CPU transcoding when needed</li></ul>
+        <div class="stack">Python · Flask · FFmpeg · SQLite · APScheduler · video.js · go2rtc</div>
+        <div class="lk"><a href="https://haris-pp.github.io/recoracam-website/" target="_blank" rel="noopener">Product site ↗</a><a href="https://github.com/haris-pp/RecoraCamNVR" target="_blank" rel="noopener">Source on GitHub ↗</a></div>
       </div>
+    </article>
+    <div class="detail"><div><h4>Scheduling</h4><p>Weekly 15-minute grid for one or many cameras, with quick fills for 24/7, business hours, nights and weekends. Plans can be copied between cameras.</p></div><div><h4>Reliability</h4><p>A supervisor restarts failed recorders with growing delays. Every 60 seconds, a check restarts any camera that should be recording but isn&#x27;t.</p></div><div><h4>Storage</h4><p>When the disk passes a limit (85% by default), the oldest days are deleted first across all cameras, at times you choose.</p></div></div>
 
-      <div class="gallery">
-        <figure><img src="assets/recoracam/home.png" alt="Camera wall with status and system stats" loading="lazy" /><figcaption>Camera wall and system stats</figcaption></figure>
-        <figure><img src="assets/recoracam/schedules.png" alt="Weekly scheduling grid" loading="lazy" /><figcaption>Weekly schedule grid</figcaption></figure>
-        <figure><img src="assets/recoracam/download.png" alt="Clip export with trim timeline" loading="lazy" /><figcaption>Clip export with in/out points</figcaption></figure>
-        <figure><img src="assets/recoracam/cameras.png" alt="Camera list and stream settings" loading="lazy" /><figcaption>Camera setup and connection test</figcaption></figure>
-        <figure><img src="assets/recoracam/settings.png" alt="Storage and clean-up settings" loading="lazy" /><figcaption>Storage and clean-up settings</figcaption></figure>
-        <figure><img src="assets/recoracam/playback.png" alt="Timeline playback" loading="lazy" /><figcaption>24-hour timeline playback</figcaption></figure>
-      </div>
-    </section>
+    <div class="sh" id="work"><h2><span class="n">02</span>Client work</h2><p>Desktop software for audio, video and real-time data. Open a project to see its screens.</p></div>
+    <div class="work">
+      <details class="row" open>
+        <summary><span class="n">2.1</span><span class="t">Streambox</span><span class="st">Qt 6 · C++</span><span class="pl">Windows &amp; macOS</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/streambox.webp" alt="Streambox music streaming desktop app" loading="lazy" /><div class="thumbs"><button type="button" class="on" data-src="assets/projects/streambox.webp" data-alt="Streambox music streaming desktop app"><img src="assets/projects/streambox.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streambox-1.webp" data-alt="Streambox track list with BPM, key and genre"><img src="assets/projects/streambox-1.webp" alt="" loading="lazy" /><span>Tracks</span></button><button type="button" data-src="assets/projects/streambox-2.webp" data-alt="Streambox home with recently added playlists and charts"><img src="assets/projects/streambox-2.webp" alt="" loading="lazy" /><span>Home</span></button></div></div><div><p>A desktop music streaming client for Windows and macOS. I moved the codebase from Qt 5.15 to 6.7, added a universal macOS build with a signed DMG, and redesigned the UI (login, playlists, charts, search).</p><p>Logging in froze on large libraries (1,800+ songs). Batching the SQLite writes into scoped transactions made sync about <strong>31× faster</strong>. I also added AES encryption for user data with OpenSSL, and connected the app to a companion DJ app through a shared database.</p><div class="tags"><span>C++ / Qt 6</span><span>SQLite</span><span>OpenSSL</span><span>macOS signing</span></div><div class="lk"><a href="https://djstream.music-worx.com/streambox/" target="_blank" rel="noopener">Visit djstream.music-worx.com/streambox ↗</a></div></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.2</span><span class="t">Streamify</span><span class="st">JUCE · C++</span><span class="pl">Windows &amp; macOS</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/streamify.webp" alt="Streamify DJ recording app" loading="lazy" /><div class="thumbs"><button type="button" class="on" data-src="assets/projects/streamify.webp" data-alt="Streamify DJ recording app"><img src="assets/projects/streamify.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streamify-1.webp" data-alt="Streamify streaming history of uploaded recordings"><img src="assets/projects/streamify-1.webp" alt="" loading="lazy" /><span>History</span></button><button type="button" data-src="assets/projects/streamify-2.webp" data-alt="Streamify profile with credits and usage stats"><img src="assets/projects/streamify-2.webp" alt="" loading="lazy" /><span>Profile</span></button><button type="button" data-src="assets/projects/streamify-3.webp" data-alt="Streamify login screen"><img src="assets/projects/streamify-3.webp" alt="" loading="lazy" /><span>Login</span></button><button type="button" data-src="assets/projects/streamify-4.webp" data-alt="Streamify ready-to-record screen"><img src="assets/projects/streamify-4.webp" alt="" loading="lazy" /><span>Start</span></button><button type="button" data-src="assets/projects/streamify-5.webp" data-alt="Streamify recording in progress"><img src="assets/projects/streamify-5.webp" alt="" loading="lazy" /><span>Recording</span></button></div></div><div><p>A desktop app that lets DJs record live sets and upload them to the cloud automatically. It supports live and offline recording, with an upload queue that retries failed uploads and checks credits against a REST backend.</p><p>I added session history, DJ controller support, IP-based location for tagging venues, code signing and Inno Setup installers. DJs get a stable one-click recording workflow that matches the client's Android app, and sets are stored on Wasabi object storage.</p><div class="tags"><span>C++ / JUCE</span><span>CMake</span><span>REST</span><span>Inno Setup</span></div><div class="lk"><a href="https://streamifystg.streamify.ch/" target="_blank" rel="noopener">Visit streamifystg.streamify.ch ↗</a></div></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.3</span><span class="t">Replay Video Capture</span><span class="st">Qt · C++</span><span class="pl">Windows &amp; macOS</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/replay.webp" alt="Replay Video Capture screen recording app" loading="lazy" /><div class="thumbs"><button type="button" class="on" data-src="assets/projects/replay.webp" data-alt="Replay Video Capture screen recording app"><img src="assets/projects/replay.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/replay-1.webp" data-alt="Replay Video Capture main capture screen"><img src="assets/projects/replay-1.webp" alt="" loading="lazy" /><span>Capture</span></button><button type="button" data-src="assets/projects/replay-2.webp" data-alt="Replay Video Capture audio and video settings"><img src="assets/projects/replay-2.webp" alt="" loading="lazy" /><span>Settings</span></button></div></div><div><p>Users needed one product that reliably records on-screen video and audio on both Windows and macOS. I worked on the capture engine and the cross-platform UI.</p><div class="tags"><span>C++ / Qt</span><span>Video capture</span><span>Windows</span><span>macOS</span></div><div class="lk"><a href="https://applian.com/replay-video-capture/" target="_blank" rel="noopener">Visit applian.com/replay-video-capture ↗</a></div></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.4</span><span class="t">MixWorx</span><span class="st">Audio · Real-time</span><span class="pl">Desktop</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/mixworx.webp" alt="MixWorx DJ software with decks, mixer and track library" loading="lazy" /></div><div><p>A platform where DJs mix tracks and broadcast live audio to listeners online. I worked on audio handling and the broadcasting features.</p><div class="tags"><span>Audio streaming</span><span>Real-time</span><span>Broadcasting</span></div><div class="lk"><a href="https://djstream.music-worx.com/mixworx/" target="_blank" rel="noopener">Visit djstream.music-worx.com/mixworx ↗</a></div></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.5</span><span class="t">Teleteens</span><span class="st">Qt · C++</span><span class="pl">Windows</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/project-teleteens.png" alt="Teleteens parental control app" loading="lazy" /></div><div><p>A Windows app that lets parents monitor and manage their children's device use safely. I built the monitoring logic and the app UI.</p><div class="tags"><span>C++ / Qt</span><span>Windows</span><span>Monitoring</span></div><div class="lk"><a href="https://teleteens.co/" target="_blank" rel="noopener">Visit teleteens.co ↗</a></div></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.6</span><span class="t">Algo trading client</span><span class="st">Qt · C++</span><span class="pl">Desktop</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/trading.webp" alt="Algo trading client with trades, positions, algorithms and missed trades" loading="lazy" /></div><div><p>Traders needed a fast desktop client to run options strategies and watch them in real time. I built it in Qt/C++.</p><p>Users build and run algorithms, then follow trades, positions, missed trades and running strategies in docked panels. The app connects to exchange sockets and keeps data in a local database.</p><div class="tags"><span>C++ / Qt</span><span>WebSockets</span><span>Real-time data</span><span>Local database</span></div><span class="private">Private client project</span></div></div>
+      </details>
+      <details class="row">
+        <summary><span class="n">2.7</span><span class="t">TORQ</span><span class="st">REST · WebSocket</span><span class="pl">Desktop</span><span class="x" aria-hidden="true"></span></summary>
+        <div class="body"><div data-switch><img class="shot js-main" src="assets/projects/torq.webp" alt="TORQ trading dashboard with market watch, index ticker and activity logs" loading="lazy" /></div><div><p>A trading terminal with a dashboard, market watch lists, a live index ticker, orders and positions, and algo tools.</p><p>Trading data comes from a REST API, live prices stream in over WebSocket, and the app stores its data in a database. An activity log shows each session event as it happens.</p><div class="tags"><span>REST API</span><span>WebSocket</span><span>Live market data</span><span>Database</span></div><span class="private">Private client project</span></div></div>
+      </details>
+    </div>
 
-    <!-- ============ AI VIDEO INVESTIGATOR ============ -->
-    <section id="aivideoinvestigator">
-      <div class="kicker">My own product · 2026</div>
-      <h2>AI Video Investigator</h2>
-      <p class="sub">Finding one moment in hours of camera footage usually means scrubbing video by hand. AI Video Investigator records the cameras, detects every person and vehicle, and lets you search the footage in plain English, all on one PC.</p>
+    <div class="sh" id="earlier"><h2><span class="n">03</span>Earlier work</h2><p>Camera, streaming and embedded systems at Vappica and NiLogic, 2011–2022.</p></div>
+    <div class="earlier">
+      <div><small>Qt · OpenCV · HLS</small><b>Network camera recorder with analytics</b><p>A Qt recorder with HLS live view on web and desktop, plus object detection and recognition, motion detection and email alerts.</p></div>
+      <div><small>WebRTC · Qt · JavaScript</small><b>WebRTC streaming &amp; classroom platform</b><p>Live audio, video and text chat with assignments, exams and student management. I was lead developer.</p></div>
+      <div><small>Web · Qt · MySQL · Linux</small><b>Access control &amp; remote doors</b><p>Central management of access control and remote door operations, with web and desktop clients.</p></div>
+      <div><small>Qt · Bluetooth LE</small><b>Beacon management app</b><p>A Qt desktop app that configures beacons over Bluetooth and manages beacon-based ads.</p></div>
+      <div><small>OpenCV · Embedded Linux</small><b>Embedded computer vision</b><p>Fire and cloud detection and dimension measurement on BeagleBoard and Raspberry Pi, with cross-compiled kernels.</p></div>
+      <div><small>Raspberry Pi · WebRTC</small><b>Pi camera recorder &amp; intercom</b><p>Raspberry Pi camera recorders and an intercom system with WebRTC mobile clients for Android and iOS.</p></div>
+    </div>
 
-      <div class="spot">
-        <div>
-          <span class="tag">C++ · computer vision · local AI</span>
-          <h3>Ask your cameras what happened.</h3>
-          <p>Type "white car at Staff Parking" or "people sitting on a bench" and jump to the moment. Watch live, scrub a 24-hour timeline and cut the clip in a second. No cloud: footage, detection and search stay on the PC.</p>
-          <ul class="feat">
-            <li>YOLOv8 detection on ONNX Runtime, tracked so each object is one event</li>
-            <li>Plain-English search, with an optional local language model (llama.cpp)</li>
-            <li>Visual search with CLIP: describe how it looks, results ranked by match</li>
-            <li>WebRTC live wall, 24-hour timeline and clip export without re-encoding</li>
-          </ul>
-          <div class="chips"><span>C++17 / Qt 6</span><span>Drogon</span><span>ONNX Runtime</span><span>YOLOv8</span><span>CLIP</span><span>llama.cpp</span><span>FFmpeg</span><span>go2rtc</span><span>SQLite</span></div>
-          <div class="cta" style="margin-top:0">
-            <a class="btn btn-p" href="https://haris-pp.github.io/aivideoinvestigator-website/" target="_blank" rel="noopener">Visit product site ↗</a>
-            <a class="btn btn-g" href="https://haris-pp.github.io/aivideoinvestigator-website/#demo" target="_blank" rel="noopener">Watch the demo</a>
-          </div>
-        </div>
-        <div>
-          <div class="browser">
-            <div class="bar"><i></i><i></i><i></i><span class="url mono">127.0.0.1 · live view</span></div>
-            <img src="assets/aivideoinvestigator/live.webp" alt="AI Video Investigator live view: a four-camera wall with a camera list and today's detections" width="1440" height="810" loading="lazy" />
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery">
-        <figure><img src="assets/aivideoinvestigator/search.webp" alt="Search results for white car at Staff Parking" loading="lazy" /><figcaption>Plain-English search</figcaption></figure>
-        <figure><img src="assets/aivideoinvestigator/visual.webp" alt="Visual search results for people sitting on a bench" loading="lazy" /><figcaption>Visual search with CLIP</figcaption></figure>
-        <figure><img src="assets/aivideoinvestigator/playback.webp" alt="Playback with a 24-hour timeline of people, vehicles and motion" loading="lazy" /><figcaption>Timeline and clip export</figcaption></figure>
-      </div>
-      <p class="sub" style="font-size:.85rem;margin-top:14px">Demo footage: MEVA dataset by Kitware Inc. and IARPA (mevadata.org), CC BY 4.0.</p>
-    </section>
-
-    <!-- ============ RECENT CLIENT WORK ============ -->
-    <section id="work">
-      <div class="kicker">Client work</div>
-      <h2>Recent projects</h2>
-      <p class="sub">Desktop software for audio, video and real-time data.</p>
-      <div class="plist">
-
-        <article class="proj">
-          <div class="media">
-            <img class="main" src="assets/projects/streambox.webp" alt="Streambox music streaming desktop app" loading="lazy" />
-            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/streambox.webp" data-alt="Streambox music streaming desktop app"><img src="assets/projects/streambox.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streambox-1.webp" data-alt="Streambox track list with BPM, key and genre"><img src="assets/projects/streambox-1.webp" alt="" loading="lazy" /><span>Tracks</span></button><button type="button" data-src="assets/projects/streambox-2.webp" data-alt="Streambox home with recently added playlists and charts"><img src="assets/projects/streambox-2.webp" alt="" loading="lazy" /><span>Home</span></button></div>
-          </div>
-          <div>
-            <span class="meta">Qt 6 · C++ · Windows &amp; macOS</span>
-            <h3>Streambox — music streaming desktop app</h3>
-            <p>A desktop music streaming client for Windows and macOS. I moved the codebase from Qt 5.15 to 6.7, added a universal macOS build with a signed DMG, and redesigned the UI (login, playlists, charts, search).</p>
-            <p>Logging in froze on large libraries (1,800+ songs). Batching the SQLite writes into scoped transactions made sync about <strong>31× faster</strong>. I also added AES encryption for user data with OpenSSL, and connected the app to a companion DJ app through a shared database.</p>
-            <a class="go" href="https://djstream.music-worx.com/streambox/" target="_blank" rel="noopener">↗ djstream.music-worx.com/streambox</a>
-            <div class="chips"><span>C++ / Qt 6</span><span>SQLite</span><span>OpenSSL</span><span>macOS signing</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <div class="media">
-            <img class="main" src="assets/projects/streamify.webp" alt="Streamify DJ recording app" loading="lazy" />
-            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/streamify.webp" data-alt="Streamify DJ recording app"><img src="assets/projects/streamify.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/streamify-1.webp" data-alt="Streamify streaming history of uploaded recordings"><img src="assets/projects/streamify-1.webp" alt="" loading="lazy" /><span>History</span></button><button type="button" data-src="assets/projects/streamify-2.webp" data-alt="Streamify profile with credits and usage stats"><img src="assets/projects/streamify-2.webp" alt="" loading="lazy" /><span>Profile</span></button><button type="button" data-src="assets/projects/streamify-3.webp" data-alt="Streamify login screen"><img src="assets/projects/streamify-3.webp" alt="" loading="lazy" /><span>Login</span></button><button type="button" data-src="assets/projects/streamify-4.webp" data-alt="Streamify ready-to-record screen"><img src="assets/projects/streamify-4.webp" alt="" loading="lazy" /><span>Start</span></button><button type="button" data-src="assets/projects/streamify-5.webp" data-alt="Streamify recording in progress"><img src="assets/projects/streamify-5.webp" alt="" loading="lazy" /><span>Recording</span></button></div>
-          </div>
-          <div>
-            <span class="meta">JUCE · C++ · Windows &amp; macOS</span>
-            <h3>Streamify — audio recording app for DJs</h3>
-            <p>A desktop app that lets DJs record live sets and upload them to the cloud automatically. It supports live and offline recording, with an upload queue that retries failed uploads and checks credits against a REST backend.</p>
-            <p>I added session history, DJ controller support, IP-based location for tagging venues, code signing and Inno Setup installers. DJs get a stable one-click recording workflow that matches the client's Android app, and sets are stored on Wasabi object storage.</p>
-            <a class="go" href="https://streamifystg.streamify.ch/" target="_blank" rel="noopener">↗ streamifystg.streamify.ch</a>
-            <div class="chips"><span>C++ / JUCE</span><span>CMake</span><span>REST</span><span>Inno Setup</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <div class="media">
-            <img class="main" src="assets/projects/replay.webp" alt="Replay Video Capture screen recording app" loading="lazy" />
-            <div class="thumbs"><button type="button" class="on" data-src="assets/projects/replay.webp" data-alt="Replay Video Capture screen recording app"><img src="assets/projects/replay.webp" alt="" loading="lazy" /><span>Overview</span></button><button type="button" data-src="assets/projects/replay-1.webp" data-alt="Replay Video Capture main capture screen"><img src="assets/projects/replay-1.webp" alt="" loading="lazy" /><span>Capture</span></button><button type="button" data-src="assets/projects/replay-2.webp" data-alt="Replay Video Capture audio and video settings"><img src="assets/projects/replay-2.webp" alt="" loading="lazy" /><span>Settings</span></button></div>
-          </div>
-          <div>
-            <span class="meta">Qt · C++ · Windows &amp; macOS</span>
-            <h3>Replay Video Capture — screen recording</h3>
-            <p>Users needed one product that reliably records on-screen video and audio on both Windows and macOS. I worked on the capture engine and the cross-platform UI.</p>
-            <a class="go" href="https://applian.com/replay-video-capture/" target="_blank" rel="noopener">↗ applian.com/replay-video-capture</a>
-            <div class="chips"><span>C++ / Qt</span><span>Video capture</span><span>Windows</span><span>macOS</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <img class="main" src="assets/projects/mixworx.webp" alt="MixWorx DJ software with decks, mixer and track library" loading="lazy" />
-          <div>
-            <span class="meta">Audio · Real-time · Web</span>
-            <h3>MixWorx — DJ &amp; audio broadcasting</h3>
-            <p>A platform where DJs mix tracks and broadcast live audio to listeners online. I worked on audio handling and the broadcasting features.</p>
-            <a class="go" href="https://djstream.music-worx.com/mixworx/" target="_blank" rel="noopener">↗ djstream.music-worx.com/mixworx</a>
-            <div class="chips"><span>Audio streaming</span><span>Real-time</span><span>Web</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <img src="assets/project-teleteens.png" alt="Teleteens parental control app" loading="lazy" />
-          <div>
-            <span class="meta">Qt · C++ · Windows</span>
-            <h3>Teleteens — parental control</h3>
-            <p>A Windows app that lets parents monitor and manage their children's device use safely. I built the monitoring logic and the app UI.</p>
-            <a class="go" href="https://teleteens.co/" target="_blank" rel="noopener">↗ teleteens.co</a>
-            <div class="chips"><span>C++ / Qt</span><span>Windows</span><span>Monitoring</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <img class="main" src="assets/projects/trading.webp" alt="Algo trading client with trades, positions, algorithms and missed trades" loading="lazy" />
-          <div>
-            <span class="meta">Qt · C++ · Desktop</span>
-            <h3>Algo trading client</h3>
-            <p>Traders needed a fast desktop client to run options strategies and watch them in real time. I built it in Qt/C++.</p>
-            <p>Users build and run algorithms, then follow trades, positions, missed trades and running strategies in docked panels. The app connects to exchange sockets and keeps data in a local database.</p>
-            <div class="chips"><span>C++ / Qt</span><span>WebSockets</span><span>Real-time data</span><span>Local database</span></div>
-          </div>
-        </article>
-
-        <article class="proj">
-          <img class="main" src="assets/projects/torq.webp" alt="TORQ trading dashboard with market watch, index ticker and activity logs" loading="lazy" />
-          <div>
-            <span class="meta">Desktop · REST API · WebSocket</span>
-            <h3>TORQ — trading dashboard</h3>
-            <p>A trading terminal with a dashboard, market watch lists, a live index ticker, orders and positions, and algo tools.</p>
-            <p>Trading data comes from a REST API, live prices stream in over WebSocket, and the app stores its data in a database. An activity log shows each session event as it happens.</p>
-            <div class="chips"><span>REST API</span><span>WebSocket</span><span>Live market data</span><span>Database</span></div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ============ EARLIER WORK ============ -->
-    <section id="earlier">
-      <div class="kicker">Earlier work · Vappica &amp; NiLogic</div>
-      <h2>More projects</h2>
-      <p class="sub">Camera, streaming and embedded systems from 2011–2022.</p>
-      <div class="grid">
-        <article class="card"><img src="assets/project-camera.svg" alt="Network camera recorder" loading="lazy" /><div class="b">
-          <span class="meta">Qt · OpenCV · HLS</span><h4>Network camera recorder with analytics</h4>
-          <p>A Qt recorder with HLS live view (including audio) on web and desktop, plus object detection and recognition, motion detection and email alerts. I worked on the server engine, analytics and client apps.</p></div></article>
-        <article class="card"><img src="assets/project-streaming.svg" alt="WebRTC streaming platform" loading="lazy" /><div class="b">
-          <span class="meta">WebRTC · Qt · JavaScript</span><h4>WebRTC streaming &amp; classroom platform</h4>
-          <p>Live audio, video and text chat with full classroom tools: assignments, exams and student management. I was lead developer for the architecture, signalling and clients.</p></div></article>
-        <article class="card"><img src="assets/project-web.svg" alt="Access control web application" loading="lazy" /><div class="b">
-          <span class="meta">Web · Qt · MySQL · Linux</span><h4>Access control &amp; remote doors</h4>
-          <p>Central management of access control and remote door operations, with web and desktop clients. I built the backend and the application.</p></div></article>
-        <article class="card"><img src="assets/project-beacon.svg" alt="Beacon management app" loading="lazy" /><div class="b">
-          <span class="meta">Qt · Bluetooth LE</span><h4>Beacon management app</h4>
-          <p>A Qt desktop app that configures beacons over Bluetooth and manages beacon-based ads. I built the UI and the BLE device communication.</p></div></article>
-        <article class="card"><img src="assets/project-vision.svg" alt="Embedded computer vision" loading="lazy" /><div class="b">
-          <span class="meta">OpenCV · Embedded Linux</span><h4>Embedded computer vision</h4>
-          <p>OpenCV fire and cloud detection and dimension measurement on BeagleBoard and Raspberry Pi. Includes cross-compiled Linux kernels.</p></div></article>
-        <article class="card"><img src="assets/project-intercom.svg" alt="WebRTC intercom" loading="lazy" /><div class="b">
-          <span class="meta">Raspberry Pi · WebRTC</span><h4>Pi camera recorder &amp; intercom</h4>
-          <p>Raspberry Pi camera recorders and an intercom system with WebRTC mobile clients for Android and iOS.</p></div></article>
-      </div>
-    </section>
-
-    <section>
-      <div class="contact">
-        <div class="kicker">Want to see more?</div>
-        <h2>Happy to walk you through any project</h2>
-        <p class="sub">I can share code samples and talk through how I'd approach yours.</p>
-        <div class="cta">
-          <a class="btn btn-p" href="mailto:harisprp@gmail.com">Get in touch</a>
-          <a class="btn btn-g" href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">Upwork profile ↗</a>
-        </div>
-      </div>
+    <section class="contact" id="contact">
+      <h2>Happy to walk you through <span>any project.</span></h2>
+      <div><a class="mail" href="mailto:harisprp@gmail.com">harisprp@gmail.com</a><p>I can share code samples and talk through how I'd approach yours.</p>
+        <div class="btns"><a class="btn dark" href="mailto:harisprp@gmail.com?subject=Project%20enquiry">Hire me</a><a class="btn" href="Haris-Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></div>
+        <p class="alt">Prefer to hire through Upwork? <a href="https://www.upwork.com/freelancers/~01d4a61499032e2bb8" target="_blank" rel="noopener">See my Upwork profile ↗</a></p></div>
     </section>
   </main>
-
-  <footer>© <span id="year"></span> Haris P P · Kannur, Kerala, India</footer>
+  <footer><div class="wrap"><span>© <span id="year"></span> Haris P P</span><span>Kannur, Kerala, India</span></div></footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('.media').forEach(function (m) {
-      var main = m.querySelector('.main');
-      m.querySelectorAll('.thumbs button').forEach(function (b) {
+    document.querySelectorAll('[data-switch]').forEach(function (box) {
+      var main = box.querySelector('.js-main');
+      var btns = box.querySelectorAll('button[data-src]');
+      btns.forEach(function (b) {
         b.addEventListener('click', function () {
-          m.querySelectorAll('.thumbs button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          btns.forEach(function (x) { x.classList.toggle('on', x === b); });
           main.src = b.dataset.src; main.alt = b.dataset.alt;
         });
       });
-    });
-    document.getElementById('shot-tabs').addEventListener('click', function (e) {
-      var b = e.target.closest('button'); if (!b) return;
-      this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
-      var img = document.getElementById('shot');
-      img.src = 'assets/recoracam/' + b.dataset.s + '.png';
-      img.alt = b.dataset.alt;
-      document.getElementById('shot-url').textContent = 'localhost:5000/' + b.dataset.s;
     });
   </script>
 </body>
