@@ -37,6 +37,9 @@ nav{display:flex;align-items:center;justify-content:space-between;height:64px;ga
 .hero aside p{margin-bottom:22px}
 .hero.page{grid-template-columns:1fr;gap:20px;padding:90px 0 60px}
 .hero.page p{font-size:1.15rem;color:var(--dim);max-width:720px}
+.me{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.me .status{margin-bottom:0}
+.avatar{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 auto;box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--line)}
 .status{display:inline-flex;gap:8px;align-items:center;font:500 .78rem 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin-bottom:18px}
 .status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok)}
 .status a{text-decoration:underline;text-underline-offset:3px}
